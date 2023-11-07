@@ -21,11 +21,11 @@ namespace Exam_Example_1
             Console.WriteLine("Write data to a generic sensor");
         }
     }
-
+    // Sensor class is the base class for TemperatureSensor
     class TemperatureSensor : Sensor
     {
         private float temp;
-
+        //Overloaded contsructor to assign name
         public TemperatureSensor(string name)
         {
             Name = name;
@@ -44,6 +44,7 @@ namespace Exam_Example_1
     {
         private float pressure;
 
+        // overloaded contstructor to assign name
         public PressureSensor(string name)
         {
             Name = name;
@@ -175,7 +176,7 @@ namespace Exam_Example_1
      * 
      * TemperatureSensor has a private member called temp, similarly other derived classes 
      * have a private member each.
-     * 
+     * I use overloaded contructors to assign the name
      * 
      * Some Limitations of the above code:
      * 1) We can still define an object of Sensor (base) class which is not useful at all
